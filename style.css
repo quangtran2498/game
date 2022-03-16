@@ -1,5 +1,13 @@
 
 
+  .web-cty {
+    width: 100%;
+    overflow: hidden;
+}
+ .game {
+     width: 100%;
+     overflow: hidden;
+ }
 
  .mt-15 {
      margin-top: 25px !important;
@@ -8,56 +16,266 @@
 .game-img {
     height: 699px;
     margin-top: 85px;
+    
+}
+@keyframes nav-menu {
+    from {
+        transform: scale(0);
+        transform: translateX(calc(100% + 100px));
+    }
+    to {
+        transform: scale(1);
+        transform: translateX(calc());
+
+    }
 }
 
-img.game-content_list-item_link-item1_img {
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+
+/* responsive */
+
+@media (max-width : 500px) {
+    
+    .section1-header {
+        display: none;
+    }
+    .header-mobie {
+        background-color: black;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+    }
+    .nav-mobie {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img.nav-img {
+        width: 70%;
+    }
+    .nav-menu_children {
+        position: fixed;
+        height: 100vh;
+        background-color:rgba(0,0,0,0.8);
+        top: 0;
+        right: -100%;
+        z-index: 9999;
+        transition: right 0.5s ease-in-out;
+        animation: nav-menu linear 0.5s;
+        width: 65%;
+    }
+    .section1-header_nav-home_list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        margin-top: 50px;
+    }
+    a.section1-header_nav-home_link {
+        height: 10%;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 84px;
+    }
+    i.ti-close {
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a.section1-header_nav-home_link:hover {
+        background-color: #ccc;
+        color: #333;
+    }
+  .nav-menu_children.open-menu {
+      right: 0;
+  }
+
+  /* conten */
+  .web-cty.section1 {
+    height: 85vh;
+    margin-top: 80px;
+  }
+  .section1-content {
+      display: inline-block;
+  }
+  .section1-content_lists {
+    width: 150%;
+    height: 45%;
+    transform: translate(-25%, 0%);
+  }
+  .section1-content_list {
+    width: 100%;
+    padding: 36px 30px;
+  }
+  .section1-content-item {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .section1-content-item3 {
+    font-size: 12px;
+    opacity: 0.8;
+    transform: translateY(15px);
+    width: 75%;
+  }
+  img.section1-content-item_img {
+    width: 50%;
+}
+
+/* content */
+.game {
+    
+    transform: translateY(80px);
+}
+.game-img {
+    height: 200px;
+    margin-top: 0 !important;
+}
+img.game-img_item {
+    width: 100%;
+    height: 100%;
 }
 .game-content {
     background-color: #000000;
-    height: 2000px;
+    transform: translateY(-0.5%);
+    height: 4400px;
+}
+img.game-content_list-item_link-item1_img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.game-content_list-item_link-item2 {
+    background: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-
-.game-content_list-item {
-    width: 33%;
-    display: flex;
-    justify-content: center;
+.game-content_list-item_link-item2_img {
+    width: 35%;
+    text-align: center;
 }
 a.game-content_list-item_link {
     text-decoration: none;
 }
-.game-content_list-item_link-item2 {
-    background-color: white;
-    width: 100%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    display: flex;
-    height: 125px;
-    align-items: center;
-}
-.game-content_list-item_link-item2_img {
-    width: 110px;
-    text-align: center;
-}
 .game-content_list-item_link-item2_list1 {
-    color: #181818;
+    font-size: 19px;
     font-weight: bold;
-    font-size: 24px;
+    color: black;
 }
 .game-content_list-item_link-item2_list2 {
-    color: #C60000;
+    color: tomato;
 }
 .game-content_list {
-    width: 65%;
-    display: flex;
-    height: 85%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 0 35px;
+    transform: translateY(40px);
 }
-.game-content_list-item_child {
-    width: fit-content;
+.game-content_list-item {
+    height: 340px;
+}
+.mt-20 {
+    margin-top: 20px !important;
+}
+.section.section8 {
+    background: #181818;
+    height: 600px;
+    transform: translateY(-22px);
+}
+.section8-content {
+    color: white;
+    transform: translateY(50px);
+    padding: 0 35px;
+}
+.section8-content_contact1 {
+    height: 140px;
+}
+.section8-content_contact2 {
+    height: 150px;
+}
+.section8-content_contact3 {
+    height: 140px;
+}
+.section8-footer {
+    color: #ccc;
+    text-align: center;
+}
+input.section8-content_contact3-input {
+    border: none;
+}
+
+
+
+
+
+
+
+}
+@media (min-width : 1024px ) {
+    .header-mobie {
+        display: none;
+    }
+
+    img.game-content_list-item_link-item1_img {
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .game-content {
+        background-color: #000000;
+        height: 2000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .game-content_list-item {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+    a.game-content_list-item_link {
+        text-decoration: none;
+    }
+    .game-content_list-item_link-item2 {
+        background-color: white;
+        width: 100%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        height: 125px;
+        align-items: center;
+    }
+    .game-content_list-item_link-item2_img {
+        width: 110px;
+        text-align: center;
+    }
+    .game-content_list-item_link-item2_list1 {
+        color: #181818;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .game-content_list-item_link-item2_list2 {
+        color: #C60000;
+    }
+    .game-content_list {
+        width: 65%;
+        display: flex;
+        height: 85%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .game-content_list-item_child {
+        width: fit-content;
+    }
+    
 }
